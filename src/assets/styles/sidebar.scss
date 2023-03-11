@@ -1,0 +1,33 @@
+$dark-blue: #063057;
+
+#sidebar-item {
+  background-color: $dark-blue !important;
+  color: white;
+  border: 0;
+  border-top: 0.5px solid white;
+}
+
+.sidebar-wrapper {
+  width: 15vw;
+  height: 100vh;
+  background: $dark-blue;
+
+  .sidebar-list {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .sidebar-list {
+    width: 30vw;
+
+    .list-group-item {
+      .nav-link {
+        justify-content: center;
+        .nav-link-text {
+          display: none;
+        }
+      }
+    }
+  }
+}
